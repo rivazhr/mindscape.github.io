@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Images/maskot.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.18.0/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Mindscape</title>
+  </head>
+  <body>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/navbar.js"></script>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="homepage.html">
+          <img src="images\Logo.png" alt="Mindscape logo" width="219.661px" class="logo">
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="tes.html">Ikuti Tes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meditasi.html">Meditasi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="community.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Komunitas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="community-teman.html">Teman</a></li>
+                <li><a class="dropdown-item" href="community-obrolan.html">Ruang Obrolan</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="podcast.html">Podcast</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item px-3">
+              <a class="btn btn-outline-primary mb-2 mb-lg-0" href="dashboard.html">Dashboard</a></button>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="img-fluid" style="max-width: 48px;" src=".\images\avatar.png" alt="Avatar" class="avatar">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profilsaya.html">Profil Saya</a></li>
+                <li><a class="dropdown-item" href="landingpage.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Keluar</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content p-5 rounded-4">
+          <div class="row text-center align-content-center justify-content-center">
+            <img class="img-fluid w-75 my-3" src="images\keluar.png" alt="">
+            <h2 class="fw-bold">Keluar Akun</h2>
+            <p>Anda yakin ingin keluar dari akun Anda pada Mindscape?</p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary w-100" data-bs-dismiss="modal">Batalkan</button>
+            </div>
+            <div class="col">
+              <a type="button" class="btn btn-primary w-100" href="landing.html">Yakin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content p-5 rounded-4">
+          <div class="row text-center align-content-center justify-content-center">
+            <img class="img-fluid w-75 my-3" src="images\keluar.png" alt="">
+            <h2 class="fw-bold">Keluar Akun</h2>
+            <p>Anda yakin ingin keluar dari akun Anda pada Mindscape?</p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary w-100" data-bs-dismiss="modal">Batalkan</button>
+            </div>
+            <div class="col">
+              <a type="button" class="btn btn-primary w-100" href="landing.html">Yakin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-auto">
+      <div class="row my-5">
+        <div class="row">
+          <h2 class="fw-bold py-3">Rekomendasi Buat Kamu</h2>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-2">
+            <a href="#"><img src="images\podcast\rekom1.png" alt="Rekomendasi 1"></a>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold">Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tellus a velit finibus gravida. </p>
+            </div>
+            <div class="col-lg-2">
+            <a href="#"><img src="images\podcast\rekom2.png" alt="Rekomendasi 2"></a>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tellus a velit finibus gravida. </p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-5">
+        <div class="row">
+          <h2 class="fw-bold py-3">Riwayat Podcast</h2>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-2">
+            <a href="#"><img src="images\podcast\riwayat1.png" alt="Riwayat 1"></a>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold">Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tellus a velit finibus gravida. </p>
+            </div>
+            <div class="col-lg-2">
+            <a href="#"><img src="images\podcast\riwayat2.png" alt="Riwayat 2"></a>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tellus a velit finibus gravida. </p>
+          </div>
+        </div>
+      </div>
+      <!-- Kumpulan Cerita -->
+      <div class="row my-5">
+        <div class="row d-flex align-items-center">
+          <div class="col-lg-8">
+            <h2 class="fw-bold py-3">Kumpulan Cerita</h2>
+          </div>
+          <div class="col-lg-4">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2 h-75 shadow-sm" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-2">
+            <a href="#"><img src="images\podcast\cerita1.png" alt="Riwayat 1"></a>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold">Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tellus a velit finibus gravida. </p>
+            </div>
+            <div class="col-lg-2">
+            <a href="#"><img src="images\podcast\cerita3.png" alt="Riwayat 2"></a>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tellus a velit finibus gravida. </p>
+          </div>
+        </div>
+        <div class="row py-4 justify-content-between align-items-center">
+          <div class="col-lg-2">
+            <a href="#"><img src="images\podcast\cerita2.png" alt="Riwayat 1"></a>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold">Lorem ipsum</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tellus a velit finibus gravida. </p>
+            </div>
+            <div class="col-lg-2">
+            <a href="#"><img src="images\podcast\cerita4.png" alt="Riwayat 2"></a>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="fw-bold">Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in tellus a velit finibus gravida. </p>
+          </div>
+        </div>
+      </div>
+      <!-- Edukasi -->
+      <div class="row my-5">
+        <div class="row align-items-center" style="min-width: fit-content;">
+          <div class="col-lg-11">
+            <a href="podcast-edukasi.html">
+              <h2 class="fw-bold py-3">Edukasi</h2>
+            </a>
+          </div>
+          <div class="col-lg-1">
+            <a href="podcast-edukasi.html">
+              <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 60 55" fill="none" style="vertical-align: middle; max-width: 40px; max-height: 40px;">
+                <path d="M33.6742 19.5486C32.9419 18.8774 32.9419 17.7891 33.6742 17.1179C34.4064 16.4467 35.5936 16.4467 36.3258 17.1179L46.3258 26.2846C47.0581 26.9558 47.0581 28.044 46.3258 28.7153L36.3258 37.8819C35.5936 38.5531 34.4064 38.5531 33.6742 37.8819C32.9419 37.2107 32.9419 36.1225 33.6742 35.4512L40.4733 29.2187H16.25C15.2145 29.2187 14.375 28.4492 14.375 27.4999C14.375 26.5507 15.2145 25.7812 16.25 25.7812H40.4733L33.6742 19.5486Z" fill="black"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center mx-auto">
+          <div class="col-lg-3 text-center">
+            <a href="#" class="d-flex flex-column align-items-center">
+              <img src="images\podcast\edu1.png" alt="Edukasi 1">
+              <h5 class="py-4 text-center">Menghadapi Ujian</h5>
+            </a>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3">
+            <a href="#" class="d-flex flex-column align-items-center">
+              <img src="images\podcast\edu2.png" alt="Edukasi 2">
+              <h5 class="py-4 text-center">Burnout</h5>
+            </a>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3">
+            <a href="#" class="d-flex flex-column align-items-center">
+              <img src="images\podcast\edu3.png" alt="Edukasi 3">
+              <h5 class="py-4 text-center">FOMO</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Gaya Hidup dan kesehatan -->
+      <div class="row my-5">
+        <div class="row justify-content-between align-items-center" style="min-width: fit-content;">
+          <div class="col-lg-11">
+            <a href="podcast-gaya-hidup-dan-kesehatan.html">
+              <h2 class="fw-bold py-3">Gaya Hidup dan Kesehatan</h2>
+            </a>
+          </div>
+          <div class="col-lg-1">
+            <a href="podcast-gaya-hidup-dan-kesehatan.html">
+              <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 60 55" fill="none" style="vertical-align: middle; max-width: 40px; max-height: 40px;">
+                <path d="M33.6742 19.5486C32.9419 18.8774 32.9419 17.7891 33.6742 17.1179C34.4064 16.4467 35.5936 16.4467 36.3258 17.1179L46.3258 26.2846C47.0581 26.9558 47.0581 28.044 46.3258 28.7153L36.3258 37.8819C35.5936 38.5531 34.4064 38.5531 33.6742 37.8819C32.9419 37.2107 32.9419 36.1225 33.6742 35.4512L40.4733 29.2187H16.25C15.2145 29.2187 14.375 28.4492 14.375 27.4999C14.375 26.5507 15.2145 25.7812 16.25 25.7812H40.4733L33.6742 19.5486Z" fill="black"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center mx-auto">
+          <div class="col-lg-3 text-center">
+            <a href="#" class="d-flex flex-column align-items-center">
+              <img src="images\podcast\gayahidup1.png" alt="Gaya Hidup 1">
+              <h5 class="py-4 text-center">Hubungan</h5>
+            </a>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3">
+            <a href="#" class="d-flex flex-column align-items-center">
+              <img src="images\podcast\gayahidup2.png" alt="Gaya Hidup 2">
+              <h5 class="py-4 text-center">Self-care</h5>
+            </a>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-3"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3><a href="homepage.html"><img src="images\Logo-putih.png" alt="Mindscape logo" width="197.612px"></a></h3>
+            </div> <!-- /.widget -->
+            <div class="widget">
+              <p>Lorem ipsum dolor sit amet consectetur. Tempor id nunc cursus euismod id egestas. Iaculis nec cursus sit proin urna lorem ac potenti morbi.</p>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+          <div class="col">
+            <div class="widget">
+              <h3>Layanan</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="tes.html">Tes</a></li>
+                <li><a href="meditasi.html">Meditasi</a></li>
+                <li class="active"><a href="podcast.html">Podcast</a></li>
+                <li><a href="community.html">Komunitas</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col -->
+          <div class="col">
+            <div class="widget">
+              <h3>Lainnya</h3>
+              <ul class="list-unstyled links mb-4">
+                <li><a href="tentangkami.html">Tentang Kami</a></li>
+                <li><a href="#">Bantuan</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col -->
+          <div class="col">
+            <div class="widget">
+              <h3>Kontak</h3>
+              <ul class="list-unstyled links contact-list">
+                <li><a href="#"><img src="images\icons\Phone.png" alt="phone">0871-2345678</a></li>
+                <li><a href="#"><img src="images\icons\Mail.png" alt="email">mindscape@email.com</a></li>
+              </ul>            
+            </div> <!-- /.widget -->
+          </div> <!-- /.col -->
+        </div> <!-- /.row -->
+  
+          <div class="row">
+            <div class="col-12 text-center">
+              <hr >
+            </div>
+          </div> <!-- /.row -->
+
+        <div class="row">
+          <div class="col-12 text-center">
+              <p>Copyright ©2023 <a href="homepage.html">Mindscape</a>. All rights reserved.</p>
+            </div>
+          </div> <!-- /.row -->
+        </div> <!-- /.container -->
+      </div>
+  </body>
+</html>

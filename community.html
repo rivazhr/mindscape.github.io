@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Images/maskot.png">
+    <title>Mindscape</title>
+  </head>
+  <body>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="homepage.html">
+          <img src="images\Logo.png" alt="Mindscape logo" width="219.661px" class="logo">
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="tes.html">Ikuti Tes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="meditasi.html">Meditasi</a>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle active" href="community.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Komunitas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="community-teman.html">Teman</a></li>
+                <li><a class="dropdown-item" href="community-obrolan.html">Ruang Obrolan</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="podcast.html">Podcast</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item px-3">
+              <a class="btn btn-outline-primary mb-2 mb-lg-0" href="dashboard.html">Dashboard</a></button>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="img-fluid" style="max-width: 48px;" src=".\images\avatar.png" alt="Avatar" class="avatar">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profilsaya.html">Profil Saya</a></li>
+                <li><a class="dropdown-item" href="landingpage.html" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Keluar</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content p-5 rounded-4">
+          <div class="row text-center align-content-center justify-content-center">
+            <img class="img-fluid w-75 my-3" src="images\keluar.png" alt="">
+            <h2 class="fw-bold">Keluar Akun</h2>
+            <p>Anda yakin ingin keluar dari akun Anda pada Mindscape?</p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary w-100" data-bs-dismiss="modal">Batalkan</button>
+            </div>
+            <div class="col">
+              <a type="button" class="btn btn-primary w-100" href="landing.html">Yakin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" >
+      <div class="row py-5 justify-content-between">
+        <div class="col-lg-6 d-flex flex-column align-items-center justify-content-center">
+          <div class="row justify-content-center">
+            <h1>Komunitas</h1>
+            <p>Ruang untuk berbicara tentang kesehatan mental, berbagi pengalaman, dan mendapatkan dukungan bersama.</p>
+            <div class="row justify-content-start">
+            <button type="button" class="btn btn-primary w-50 p-2 my-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                <path d="M6.5 12H12.5M12.5 12H18.5M12.5 12V18M12.5 12V6" stroke="#FAFAFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Buat Ruang Diskusi
+            </button>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-flex justify-content-center">
+          <img class="img-fluid" src="images/komunitas.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-5 rounded-4" style="width: 800px;">
+      <div class="row">
+        <div class="col text-end">
+          <button type="button" class="btn" data-bs-dismiss="modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18" stroke="#121216" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="row text-start mb-3">
+        <h3 class="fw-bold">Buat Ruang Diskusi Baru</h3>
+      </div>
+      <div class="row">
+        <h6 class="text-start">Judul Pertanyaan</h6>
+        <div class="text-start">
+          <input type="text" class="form-control" id="title" placeholder="Masukkan judul pertanyaan" required>
+        </div>
+      </div>
+      <div class="row">
+        <h6 class="text-start">Uraian Pertanyaan</h6>
+        <div class="text-start">
+          <textarea class="form-control" id="uraian" placeholder="" required></textarea>
+        </div>
+        <p class="mt-2">Uraikan pertanyaan kamu lebih panjang dan jelas pada bagian ini.</p>
+      </div>
+      <div class="row">
+        <h6 class="text-start">Kata Kunci</h6>
+        <div class="text-start">
+          <input type="text" class="form-control" id="keyword" aria-describedby="keyword"  placeholder="" required>
+        </div>
+        <p class="mt-2">Tuliskan beberapa kata kunci pertanyaan kamu di sini dengan tanda koma sebagai pemisah</p>
+      </div>
+      <div class="row mt-4">
+        <div class="col text-end">
+          <button class="btn btn-primary" type="submit" data-bs-dismiss="modal">Buat Ruang</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container my-3">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <p style="font-size: 16px;">Menampilkan 1-5 dari 300</p>
+        </div>
+        <div class="col-lg-5">
+          <span class="">
+              <label for="categoryFilter">Filter: </label>
+              <select id="categoryFilter" class="filter-select filter-bar p-1 mx-2">
+                <option value="all">All</option>
+                <option value="anxiety">Kesehatan mental</option>
+                <option value="depresi">Depresi</option>
+                <option value="self-care">Self-Care</option>
+                <option value="hubungan">Hubungan</option>
+              </select>
+          </span>
+          <span>
+            <label>Sort by:</label>
+        <label><input type="checkbox" id="latestSort"> Latest</label>
+        <label><input type="checkbox" id="oldestSort"> Oldest</label>
+          </span>
+        </div>
+        <div class="col-lg-1"></div>
+      </div>
+      <div class="row">
+
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3><a href="homepage.html"><img src="images\Logo-putih.png" alt="Mindscape logo" width="197.612px"></a></h3>
+            </div> <!-- /.widget -->
+            <div class="widget">
+              <p>Lorem ipsum dolor sit amet consectetur. Tempor id nunc cursus euismod id egestas. Iaculis nec cursus sit proin urna lorem ac potenti morbi.</p>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-3 -->
+          <div class="col">
+            <div class="widget">
+              <h3>Layanan</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="tes.html">Tes</a></li>
+                <li><a href="meditasi.html">Meditasi</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li class="active"><a href="community.html">Komunitas</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col -->
+          <div class="col">
+            <div class="widget">
+              <h3>Lainnya</h3>
+              <ul class="list-unstyled links mb-4">
+                <li><a href="tentangkami.html">Tentang Kami</a></li>
+                <li><a href="#">Bantuan</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+              </ul>
+            </div> <!-- /.widget -->
+          </div> <!-- /.col -->
+          <div class="col">
+            <div class="widget">
+              <h3>Kontak</h3>
+              <ul class="list-unstyled links contact-list">
+                <li><a href="#"><img src="images\icons\Phone.png" alt="phone">0871-2345678</a></li>
+                <li><a href="#"><img src="images\icons\Mail.png" alt="email">mindscape@email.com</a></li>
+              </ul>            
+            </div> <!-- /.widget -->
+          </div> <!-- /.col -->
+        </div> <!-- /.row -->
+  
+          <div class="row">
+            <div class="col-12 text-center">
+              <hr >
+            </div>
+          </div> <!-- /.row -->
+
+        <div class="row">
+          <div class="col-12 text-center">
+              <p>Copyright ©2023 <a href="homepage.html">Mindscape</a>. All rights reserved.</p>
+            </div>
+          </div> <!-- /.row -->
+        </div> <!-- /.container -->
+      </div>
+  </body>
+</html>
