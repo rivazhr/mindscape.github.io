@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/custom-style.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="./Images/maskot.svg">
+  <title>Mindscape</title>
+</head>
+
+<body>
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <nav class="navbar navbar-expand-lg justify-content-between w-100 navbar-light position-sticky z-3" style="top: 0px;">
+    <div class="container">
+      <a class="navbar-brand" href="homepage.html">
+        <img src="images\Logo.svg" alt="Mindscape logo" width="219.661px" class="logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="tes.html">Ikuti Tes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="meditasi.html">Meditasi</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="community.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Komunitas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="community-teman.html">Teman</a></li>
+              <li><a class="dropdown-item" href="community-obrolan.html">Ruang Obrolan</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="podcast.html">Podcast</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item px-3">
+            <a class="btn btn-outline-primary mb-2 mb-lg-0" href="dashboard.html">Dashboard</a></button>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="img-fluid" style="max-width: 48px;" src=".\images\avatar.svg" alt="Avatar" class="avatar">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="profilsaya.html">Profil Saya</a></li>
+              <li><a class="dropdown-item" href="index.html" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">Keluar</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content p-5 rounded-4">
+        <div class="row text-center align-content-center justify-content-center">
+          <img class="img-fluid w-75 my-3" src="images\keluar.svg" alt="">
+          <h2 class="fw-bold">Keluar Akun</h2>
+          <p>Anda yakin ingin keluar dari akun Anda pada Mindscape?</p>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-outline-primary w-100" data-bs-dismiss="modal">Batalkan</button>
+          </div>
+          <div class="col">
+            <a type="button" class="btn btn-primary w-100" href="index.html">Yakin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form>
+    <div class="container my-5 p-4 rounded-5 justify-content-center align-content-center"
+      style="background-color: #AAC3E4;">
+      <div class="container p-2 text-center">
+        <div class="row m-2">
+          <h3>How are you today, Noory?</h3>
+          <p>Pilihlah opsi yang sesuai dengan keadaan atau perasaan kamu hari ini</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col">
+                <input type="radio" class="d-none" id="option1" name="radioGroup" value="marah">
+                <label for="option1">
+                  <div class="container p-4 rounded-4 text-center">
+                    <img class="img-fluid mb-2" src="images\tes\opsi\marah.svg" alt="Option 1">
+                    <h5>Marah</h5>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <input type="radio" class="d-none" id="option2" name="radioGroup" value="sedih">
+                <label for="option2">
+                  <div class="container p-4 rounded-4 text-center">
+                    <img class="img-fluid mb-2" src="images\tes\opsi\sedih.svg" alt="Sedih">
+                    <h5>Sedih</h5>
+                  </div>
+                </label>
+              </div>
+              <div class="col">
+                <input type="radio" class="d-none" id="option3" name="radioGroup" value="bahagia">
+                <label for="option3">
+                  <div class="container p-4 rounded-4 text-center">
+                    <img class="img-fluid mb-2" src="images\tes\opsi\bahagia.svg" alt="bahagia">
+                    <h5>Bahagia</h5>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5 p-4 rounded-5 justify-content-center align-content-center text-center"
+      style="background-color: #AAC3E4;">
+      <h3>Scale</h3>
+      <p>Kira-kira dalam skala berapa nih keadaan/perasaan kamu sekarang?</p>
+      <div class="form-group d-flex flex-row justify-content-center align-items-center">
+        <div>
+          Sangat Ringan
+        </div>
+        <div class="px-3">
+          <div class="d-flex flex-column rating">
+            <img class="cloud" src="./images/blue-cloud2.svg" width="100px" alt="">
+            <div>1</div>
+          </div>
+        </div>
+        <div class="px-3">
+          <div class="d-flex flex-column rating">
+            <img class="cloud" src="./images/blue-cloud2.svg" width="100px" alt="">
+            <div>2</div>
+          </div>
+        </div>
+        <div class="px-3">
+          <div class="d-flex flex-column rating">
+            <img class="cloud" src="./images/blue-cloud2.svg" width="100px" alt="">
+            <div>3</div>
+          </div>
+        </div>
+        <div class="px-3">
+          <div class="d-flex flex-column rating">
+            <img class="cloud" src="./images/blue-cloud2.svg" width="100px" alt="">
+            <div>4</div>
+          </div>
+        </div>
+        <div class="px-3">
+          <div class="d-flex flex-column rating">
+            <img class="cloud" src="./images/blue-cloud2.svg" width="100px" alt="">
+            <div>5</div>
+          </div>
+        </div>
+        <div>
+          Sangat Berat
+        </div>
+      </div>
+    </div>
+    <div class="container my-5 p-4 rounded-5 justify-content-center align-content-center text-center"
+      style="background-color: #AAC3E4;">
+      <h3>Apa yang sedang terjadi?</h3>
+      <p>Deskripsikan apa yang terjadi pada hidup kamu sekarang dan/atau apa yang ada dipikiran kamu.</p>
+      <div class="form-group m-3 my-4">
+        <textarea placeholder="Tuliskan deskripsinya di sini ya" class="form-control custom-textarea p-3" style="background: white !important;" id="pikiranmu"
+          rows="5"></textarea>
+      </div>
+      <div class="text-start mx-4">
+        <p>Contoh: Banyak yang aku lakukan sekarang. Aku khawatir aku tidak menyelesaikan semuanya.</p>
+      </div>
+    </div>
+    <div class="container my-5 p-4 rounded-5 justify-content-center align-content-center text-center"
+      style="background-color: #AAC3E4;">
+      <h3>Apa yang kamu rasakan?</h3>
+      <p>Pilihlah simptom yang sedang kamu rasakan.</p>
+      <div class="container d-flex justify-content-between">
+        <input type="checkbox" class="btn-check" id="kecewa" autocomplete="off">
+        <label class="btn align-self-center rounded-5 m-2 w-100 p-3 btn-secondary text-dark" style="font-weight: 800; background-color: #F8B4B4;" for="kecewa">Kecewa</label>
+        <input type="checkbox" class="btn-check" id="gugup" autocomplete="off">
+        <label class="btn align-self-center rounded-5 m-2 w-100 p-3 btn-secondary text-dark" style="font-weight: 800; background-color: #F8B4B4;" for="gugup">Gugup</label>
+        <input type="checkbox" class="btn-check" id="demotivasi" autocomplete="off">
+        <label class="btn align-self-center rounded-5 m-2 w-100 p-3 btn-secondary text-dark" style="font-weight: 800; background-color: #F8B4B4;" for="demotivasi">Demotivasi</label>
+      </div>
+    </div>
+    <div class="container my-5 p-4 rounded-5 justify-content-center align-content-center text-center"
+      style="background-color: #AAC3E4;">
+      <h3>Bagaimana pengaruhnya terhadap kamu?</h3>
+      <p>Deskripsikan bagaimana dampak keadaan/perasaan yang kamu rasakan sekarang</p>
+      <div class="form-group m-3 my-4">
+        <textarea placeholder="Tuliskan deskripsinya di sini ya" class="form-control custom-textarea p-3" style="background: white !important;" id="pikiranmu"
+          rows="5"></textarea>
+      </div>
+      <div class="text-start mx-4">
+        <p>Contoh: Saya merasa sedih karena itu menyebabkan pekerjaan saya menumpuk.</p>
+      </div>
+    </div>
+    <div class="container my-5 p-4 rounded-5 justify-content-center align-content-center text-center"
+      style="background-color: #AAC3E4;">
+      <h3>Things you can do</h3>
+      <p>Pilihlah aktivitas untuk kamu lakukan.</p>
+      <div class="container d-flex justify-content-between">
+        <input type="checkbox" class="btn-check" id="berkeliling rumah" autocomplete="off">
+        <label class="btn align-self-center rounded-5 m-2 w-100 p-3 btn-outline-secondary text-dark"
+          for="berkeliling rumah" style="font-weight: 800; background-color: #F8B4B4;">Dengarkan Podcast</label>
+        <input type="checkbox" class="btn-check" id="menulis jurnal" autocomplete="off">
+        <label class="btn align-self-center rounded-5 m-2 w-100 p-3 btn-outline-secondary text-dark" for="menulis jurnal" style="font-weight: 800; background-color: #F8B4B4;">Menulis
+          Jurnal</label>
+        <input type="checkbox" class="btn-check" id="meditasi" autocomplete="off">
+        <label class="btn align-self-center rounded-5 m-2 w-100 p-3 btn-outline-secondary text-dark"
+          for="meditasi" style="font-weight: 800; background-color: #F8B4B4;">Meditasi</label>
+      </div>
+    </div>
+    <div class="container my-5 p-4 justify-content-center align-content-center text-center">
+      <a href="rapothasil.html" type="submit" class="btn btn-primary p-2 w-25 rounded-5">Kirim</a>
+    </div>
+  </form>
+
+  <div class="site-footer pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="widget">
+            <h3><a href="homepage.html"><img src="images\Logo-putih.svg" alt="Mindscape logo" width="197.612px"></a>
+            </h3>
+            <p>Mindscape, platform inovatif untuk mahasiswa, menyokong kesejahteraan mental melalui fitur tes, meditasi, komunitas, dan podcast.</p>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col-lg-3 -->
+        <div class="col">
+          <div class="widget">
+            <h3>Layanan</h3>
+            <ul class="list-unstyled float-start links">
+              <li class="active"><a href="tes.html">Tes</a></li>
+              <li><a href="meditasi.html">Meditasi</a></li>
+              <li><a href="podcast.html">Podcast</a></li>
+              <li><a href="community.html">Komunitas</a></li>
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col -->
+        <div class="col">
+          <div class="widget">
+            <h3>Lainnya</h3>
+            <ul class="list-unstyled links mb-4">
+              <li><a href="tentangkami.html">Tentang Kami</a></li>
+              <li><a href="#">Bantuan</a></li>
+              <li><a href="#">Syarat & Ketentuan</a></li>
+              <li><a href="#">Kebijakan Privasi</a></li>
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col -->
+        <div class="col">
+          <div class="widget">
+            <h3>Kontak</h3>
+            <ul class="list-unstyled links contact-list">
+              <li><a href="#"><img src="images\icons\Phone.svg" alt="phone">0871-2345678</a></li>
+              <li><a href="#"><img src="images\icons\Mail.svg" alt="email">mindscape@email.com</a></li>
+            </ul>
+          </div> <!-- /.widget -->
+        </div> <!-- /.col -->
+      </div> <!-- /.row -->
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <hr>
+        </div>
+      </div> <!-- /.row -->
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>Copyright ©2023 <a href="homepage.html">Mindscape</a>. All rights reserved.</p>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

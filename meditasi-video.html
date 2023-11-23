@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/maskot.svg">
+    <title>Mindscape</title>
+  </head>
+  <body>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    
+    <nav class="navbar navbar-expand-lg justify-content-between w-100 navbar-light position-sticky z-3" style="top: 0px;">
+      <div class="container">
+        <a class="navbar-brand" href="homepage.html">
+          <img src="images\Logo.svg" alt="Mindscape logo" width="219.661px" class="logo">
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="tes.html">Ikuti Tes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="meditasi.html">Meditasi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="community.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Komunitas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="community.html">Komunitas</a></li>
+                <li><a class="dropdown-item" href="community-teman.html">Teman</a></li>
+                <li><a class="dropdown-item" href="community-obrolan.html">Ruang Obrolan</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="podcast.html">Podcast</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item px-3">
+              <a class="btn btn-outline-primary mb-2 mb-lg-0" href="dashboard.html">Dashboard</a></button>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="img-fluid" style="max-width: 48px;" src=".\images\avatar.svg" alt="Avatar" class="avatar">
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="profilsaya.html">Profil Saya</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Keluar</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content p-5 rounded-4">
+          <div class="row text-center align-content-center justify-content-center">
+            <img class="img-fluid w-75 my-3" src="images\keluar.svg" alt="">
+            <h2 class="fw-bold">Keluar Akun</h2>
+            <p>Anda yakin ingin keluar dari akun Anda pada Mindscape?</p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary w-100" data-bs-dismiss="modal">Batalkan</button>
+            </div>
+            <div class="col">
+              <a type="button" class="btn btn-primary w-100" href="index.html">Yakin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-center">
+        <img class="img-fluid" src="images\meditasi\video1.svg" alt="">
+        <div class="row d-flex position-absolute flex-column justify-content-end align-content-end text-end m-5">
+          <button class="btn play-btn w-auto"><img src="images\icons\Play-pink.svg" alt=""></button>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row my-5">
+          <h1>Melepaskan Stres</h1>
+          <p>Menikmati pikiran yang lebih sehat dengan mengembangkan kesadaran akan stres dan belajar cara mengubah emosi negatif</p>
+        </div>
+        <h1>Rekomendasi</h1>
+        <div class="row my-4">
+          <div class="col-lg-4">
+            <a href="">
+              <div class="card">
+              <img class="img-fluid" src="images\meditasi\vid1.svg" class="card-img-top" alt="Rapot 1">
+              <div class="card-body p-4">
+                <p class="card-title text-black fw-bold">Menikmati Kesendirian</p>
+                <p class="card-text">
+                  <div>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+                        <g clip-path="url(#clip0_567_2415)">
+                          <path d="M7.72756 13C7.96652 13 8.16126 12.9214 8.31179 12.7643C8.46237 12.6071 8.53765 12.4107 8.53765 12.1751V0.876448C8.53765 0.635843 8.46119 0.430838 8.30826 0.261433C8.15534 0.092027 7.957 0.00732422 7.71324 0.00732422C7.54598 0.00732422 7.39664 0.0478341 7.26522 0.128854C7.1338 0.209874 6.9749 0.338769 6.78852 0.515541L3.73476 3.46172C3.68697 3.50591 3.62723 3.52801 3.55555 3.52801H1.49821C1.01553 3.52801 0.645162 3.66427 0.387096 3.93679C0.129032 4.20932 0 4.61073 0 5.14105V7.88098C0 8.41622 0.129032 8.81888 0.387096 9.08894C0.645162 9.359 1.01553 9.49403 1.49821 9.49403H3.55555C3.62723 9.49403 3.68697 9.51613 3.73476 9.56033L6.78852 12.536C6.95101 12.698 7.10632 12.8159 7.25447 12.8895C7.4026 12.9631 7.56029 13 7.72756 13ZM11.0968 9.63394C11.221 9.71746 11.3572 9.74569 11.5053 9.71864C11.6535 9.69164 11.7754 9.60694 11.871 9.46454C12.1481 9.09135 12.3644 8.64453 12.5197 8.12406C12.675 7.60356 12.7526 7.06097 12.7526 6.49629C12.7526 5.9316 12.675 5.38901 12.5197 4.86852C12.3644 4.34803 12.1481 3.90119 11.871 3.52801C11.7754 3.38561 11.6535 3.29968 11.5053 3.27022C11.3572 3.24076 11.221 3.27022 11.0968 3.3586C10.9534 3.46172 10.871 3.59552 10.8495 3.76002C10.8279 3.92452 10.8745 4.08287 10.9892 4.23509C11.1995 4.52971 11.3608 4.87343 11.4731 5.26625C11.5854 5.65908 11.6416 6.06909 11.6416 6.49629C11.6416 6.92348 11.5842 7.33228 11.4695 7.72267C11.3548 8.113 11.1947 8.45793 10.9892 8.75746C10.8793 8.91459 10.8339 9.07418 10.8531 9.23624C10.8722 9.3983 10.9534 9.53086 11.0968 9.63394ZM13.7562 11.5564C13.8901 11.6447 14.0311 11.6754 14.1792 11.6484C14.3273 11.6214 14.4492 11.5367 14.5448 11.3943C15.0036 10.7462 15.3608 9.99489 15.6165 9.14045C15.8722 8.28607 16 7.40468 16 6.49629C16 5.58788 15.8734 4.70403 15.6201 3.84473C15.3668 2.98542 15.0083 2.2366 14.5448 1.59826C14.4492 1.45586 14.3273 1.36993 14.1792 1.34047C14.0311 1.31101 13.8901 1.34293 13.7562 1.43622C13.6272 1.52952 13.552 1.6535 13.5304 1.80818C13.509 1.96285 13.5508 2.1163 13.6559 2.26852C14.0478 2.83811 14.3513 3.48872 14.5663 4.22036C14.7814 4.952 14.8889 5.71064 14.8889 6.49629C14.8889 7.28194 14.7802 8.03936 14.5627 8.76855C14.3453 9.49773 14.043 10.1496 13.6559 10.7241C13.5555 10.8763 13.5149 11.0297 13.534 11.1844C13.5532 11.3391 13.6272 11.4631 13.7562 11.5564Z" fill="black"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_567_2415">
+                            <rect width="16" height="13" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                    <span class="mx-1">Meditasi</span>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" viewBox="0 0 3 3" fill="none">
+                        <circle cx="1.5" cy="1.5" r="1.5" fill="black"/>
+                      </svg>
+                    </span>
+                    <span class="mx-1">
+                      3-10 min
+                    </span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="">
+            <div class="card">
+              <img class="img-fluid" src="images\meditasi\vid2.svg" class="card-img-top" alt="Rapot 1">
+              <div class="card-body p-4">
+                <p class="card-title text-black fw-bold">Fokus</p>
+                <p class="card-text">
+                  <div>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+                        <g clip-path="url(#clip0_567_2415)">
+                          <path d="M7.72756 13C7.96652 13 8.16126 12.9214 8.31179 12.7643C8.46237 12.6071 8.53765 12.4107 8.53765 12.1751V0.876448C8.53765 0.635843 8.46119 0.430838 8.30826 0.261433C8.15534 0.092027 7.957 0.00732422 7.71324 0.00732422C7.54598 0.00732422 7.39664 0.0478341 7.26522 0.128854C7.1338 0.209874 6.9749 0.338769 6.78852 0.515541L3.73476 3.46172C3.68697 3.50591 3.62723 3.52801 3.55555 3.52801H1.49821C1.01553 3.52801 0.645162 3.66427 0.387096 3.93679C0.129032 4.20932 0 4.61073 0 5.14105V7.88098C0 8.41622 0.129032 8.81888 0.387096 9.08894C0.645162 9.359 1.01553 9.49403 1.49821 9.49403H3.55555C3.62723 9.49403 3.68697 9.51613 3.73476 9.56033L6.78852 12.536C6.95101 12.698 7.10632 12.8159 7.25447 12.8895C7.4026 12.9631 7.56029 13 7.72756 13ZM11.0968 9.63394C11.221 9.71746 11.3572 9.74569 11.5053 9.71864C11.6535 9.69164 11.7754 9.60694 11.871 9.46454C12.1481 9.09135 12.3644 8.64453 12.5197 8.12406C12.675 7.60356 12.7526 7.06097 12.7526 6.49629C12.7526 5.9316 12.675 5.38901 12.5197 4.86852C12.3644 4.34803 12.1481 3.90119 11.871 3.52801C11.7754 3.38561 11.6535 3.29968 11.5053 3.27022C11.3572 3.24076 11.221 3.27022 11.0968 3.3586C10.9534 3.46172 10.871 3.59552 10.8495 3.76002C10.8279 3.92452 10.8745 4.08287 10.9892 4.23509C11.1995 4.52971 11.3608 4.87343 11.4731 5.26625C11.5854 5.65908 11.6416 6.06909 11.6416 6.49629C11.6416 6.92348 11.5842 7.33228 11.4695 7.72267C11.3548 8.113 11.1947 8.45793 10.9892 8.75746C10.8793 8.91459 10.8339 9.07418 10.8531 9.23624C10.8722 9.3983 10.9534 9.53086 11.0968 9.63394ZM13.7562 11.5564C13.8901 11.6447 14.0311 11.6754 14.1792 11.6484C14.3273 11.6214 14.4492 11.5367 14.5448 11.3943C15.0036 10.7462 15.3608 9.99489 15.6165 9.14045C15.8722 8.28607 16 7.40468 16 6.49629C16 5.58788 15.8734 4.70403 15.6201 3.84473C15.3668 2.98542 15.0083 2.2366 14.5448 1.59826C14.4492 1.45586 14.3273 1.36993 14.1792 1.34047C14.0311 1.31101 13.8901 1.34293 13.7562 1.43622C13.6272 1.52952 13.552 1.6535 13.5304 1.80818C13.509 1.96285 13.5508 2.1163 13.6559 2.26852C14.0478 2.83811 14.3513 3.48872 14.5663 4.22036C14.7814 4.952 14.8889 5.71064 14.8889 6.49629C14.8889 7.28194 14.7802 8.03936 14.5627 8.76855C14.3453 9.49773 14.043 10.1496 13.6559 10.7241C13.5555 10.8763 13.5149 11.0297 13.534 11.1844C13.5532 11.3391 13.6272 11.4631 13.7562 11.5564Z" fill="black"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_567_2415">
+                            <rect width="16" height="13" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                    <span class="mx-1">Meditasi</span>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" viewBox="0 0 3 3" fill="none">
+                        <circle cx="1.5" cy="1.5" r="1.5" fill="black"/>
+                      </svg>
+                    </span>
+                    <span class="mx-1">
+                      8 min
+                    </span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </a>
+          </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="img-fluid" src="images\meditasi\vid3.svg" class="card-img-top" alt="Rapot 1">
+              <div class="card-body p-4">
+                <p class="card-title text-black fw-bold">Cara Tidur Berkualitas</p>
+                <p class="card-text">
+                  <div>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+                        <g clip-path="url(#clip0_567_2415)">
+                          <path d="M7.72756 13C7.96652 13 8.16126 12.9214 8.31179 12.7643C8.46237 12.6071 8.53765 12.4107 8.53765 12.1751V0.876448C8.53765 0.635843 8.46119 0.430838 8.30826 0.261433C8.15534 0.092027 7.957 0.00732422 7.71324 0.00732422C7.54598 0.00732422 7.39664 0.0478341 7.26522 0.128854C7.1338 0.209874 6.9749 0.338769 6.78852 0.515541L3.73476 3.46172C3.68697 3.50591 3.62723 3.52801 3.55555 3.52801H1.49821C1.01553 3.52801 0.645162 3.66427 0.387096 3.93679C0.129032 4.20932 0 4.61073 0 5.14105V7.88098C0 8.41622 0.129032 8.81888 0.387096 9.08894C0.645162 9.359 1.01553 9.49403 1.49821 9.49403H3.55555C3.62723 9.49403 3.68697 9.51613 3.73476 9.56033L6.78852 12.536C6.95101 12.698 7.10632 12.8159 7.25447 12.8895C7.4026 12.9631 7.56029 13 7.72756 13ZM11.0968 9.63394C11.221 9.71746 11.3572 9.74569 11.5053 9.71864C11.6535 9.69164 11.7754 9.60694 11.871 9.46454C12.1481 9.09135 12.3644 8.64453 12.5197 8.12406C12.675 7.60356 12.7526 7.06097 12.7526 6.49629C12.7526 5.9316 12.675 5.38901 12.5197 4.86852C12.3644 4.34803 12.1481 3.90119 11.871 3.52801C11.7754 3.38561 11.6535 3.29968 11.5053 3.27022C11.3572 3.24076 11.221 3.27022 11.0968 3.3586C10.9534 3.46172 10.871 3.59552 10.8495 3.76002C10.8279 3.92452 10.8745 4.08287 10.9892 4.23509C11.1995 4.52971 11.3608 4.87343 11.4731 5.26625C11.5854 5.65908 11.6416 6.06909 11.6416 6.49629C11.6416 6.92348 11.5842 7.33228 11.4695 7.72267C11.3548 8.113 11.1947 8.45793 10.9892 8.75746C10.8793 8.91459 10.8339 9.07418 10.8531 9.23624C10.8722 9.3983 10.9534 9.53086 11.0968 9.63394ZM13.7562 11.5564C13.8901 11.6447 14.0311 11.6754 14.1792 11.6484C14.3273 11.6214 14.4492 11.5367 14.5448 11.3943C15.0036 10.7462 15.3608 9.99489 15.6165 9.14045C15.8722 8.28607 16 7.40468 16 6.49629C16 5.58788 15.8734 4.70403 15.6201 3.84473C15.3668 2.98542 15.0083 2.2366 14.5448 1.59826C14.4492 1.45586 14.3273 1.36993 14.1792 1.34047C14.0311 1.31101 13.8901 1.34293 13.7562 1.43622C13.6272 1.52952 13.552 1.6535 13.5304 1.80818C13.509 1.96285 13.5508 2.1163 13.6559 2.26852C14.0478 2.83811 14.3513 3.48872 14.5663 4.22036C14.7814 4.952 14.8889 5.71064 14.8889 6.49629C14.8889 7.28194 14.7802 8.03936 14.5627 8.76855C14.3453 9.49773 14.043 10.1496 13.6559 10.7241C13.5555 10.8763 13.5149 11.0297 13.534 11.1844C13.5532 11.3391 13.6272 11.4631 13.7562 11.5564Z" fill="black"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_567_2415">
+                            <rect width="16" height="13" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </span>
+                    <span class="mx-1">Meditasi</span>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" viewBox="0 0 3 3" fill="none">
+                        <circle cx="1.5" cy="1.5" r="1.5" fill="black"/>
+                      </svg>
+                    </span>
+                    <span class="mx-1">
+                      10 min
+                    </span>
+                  </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const playButtons = document.querySelectorAll('.play-btn');
+
+          playButtons.forEach(button => {
+              button.addEventListener('click', function () {
+                  if (button.classList.contains('playing')) {
+                      button.classList.remove('playing');
+                      button.innerHTML = '<img src="images/icons/Play-pink.svg" alt="Play">';
+                  } else {
+                      button.classList.add('playing');
+                      button.innerHTML = '<img src="images/icons/Pause-pink.svg" alt="Pause">';
+                  }
+              });
+          });
+      });
+
+  </script>
+
+<div class="site-footer pb-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="widget">
+          <h3><a href="homepage.html"><img src="images\Logo-putih.svg" alt="Mindscape logo" width="197.612px"></a></h3>
+          <p>Mindscape, platform inovatif untuk mahasiswa, menyokong kesejahteraan mental melalui fitur tes, meditasi, komunitas, dan podcast.</p>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+      <div class="col">
+        <div class="widget">
+          <h3>Layanan</h3>
+          <ul class="list-unstyled float-start links">
+            <li><a href="tes.html">Tes</a></li>
+            <li class="active"><a href="meditasi.html">Meditasi</a></li>
+            <li><a href="podcast.html">Podcast</a></li>
+            <li><a href="community.html">Komunitas</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col -->
+      <div class="col">
+        <div class="widget">
+          <h3>Lainnya</h3>
+          <ul class="list-unstyled links mb-4">
+            <li><a href="tentangkami.html">Tentang Kami</a></li>
+            <li><a href="#">Bantuan</a></li>
+            <li><a href="#">Syarat & Ketentuan</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col -->
+      <div class="col">
+        <div class="widget">
+          <h3>Kontak</h3>
+          <ul class="list-unstyled links contact-list">
+            <li><a href="#"><img src="images\icons\Phone.svg" alt="phone">0871-2345678</a></li>
+            <li><a href="#"><img src="images\icons\Mail.svg" alt="email">mindscape@email.com</a></li>
+          </ul>            
+        </div> <!-- /.widget -->
+      </div> <!-- /.col -->
+    </div> <!-- /.row -->
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <hr >
+        </div>
+      </div> <!-- /.row -->
+
+    <div class="row">
+      <div class="col-12 text-center">
+          <p>Copyright ©2023 <a href="homepage.html">Mindscape</a>. All rights reserved.</p>
+        </div>
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+  </div>
+</body>
+</html>
