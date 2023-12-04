@@ -204,35 +204,7 @@
       </div>
     </div>  
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <script>
-        const playButtons = document.querySelectorAll('.play-btn');
-
-        playButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const audioId = button.getAttribute('data-audio-id');
-                const audio = document.getElementById(audioId);
-                const progressBar = document.querySelector(`.progress-bar-${audioId}`);
-
-                if (audio.paused) {
-                audio.play().then(() => {
-                    button.innerHTML = '<img src="images/icons/Pause.svg" alt="">';
-                })
-            } else {
-                audio.pause();
-                button.innerHTML = '<img src="images/icons/Play.svg" alt="">';
-            }
-
-                audio.addEventListener('timeupdate', () => {
-                    const progress = (audio.currentTime / audio.duration) * 100;
-                    progressBar.style.width = `${progress}%`;
-                });
-            });
-        });
-    </script>
+    <script src="js\audio-player.js"></script>
   
   <div class="site-footer">
     <div class="container">
