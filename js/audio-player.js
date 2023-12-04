@@ -48,10 +48,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function toggleAudio(id) {
     const audioContainers = ['alam', 'fokus', 'ketenangan', 'tidur'];
+    const playButtons = document.querySelectorAll('.play-btn');
 
+    
     audioContainers.forEach(containerId => {
         const container = document.getElementById(containerId);
+        const audioId = container.getAttribute('data-audio-id');
 
+        playButtons.forEach(otherButton => {
+            const otherAudioId = otherButton.getAttribute('data-audio-id');
+            if (otherAudioId !== audioId) {
+                const otherAudio = document.getElementById(otherAudioId);
+                otherAudio.pause();
+                otherButton.innerHTML = '<img src="/images/icons/Play.svg" alt="">';
+            }
+        });
+        
         if (containerId === id) {
             if (!container.classList.contains('show')) {
                 container.classList.add('show');
