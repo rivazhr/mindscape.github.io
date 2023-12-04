@@ -10,6 +10,7 @@
   </head>
   <body>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="js/search-bar.js"></script>
     
     <nav class="navbar navbar-expand-lg justify-content-between w-100 navbar-light position-sticky z-3" style="top: 0px;">
       <div class="container">
@@ -83,29 +84,37 @@
     </div>
 
     <div class="container my-5">
-      <h1 class="my-4">Teman</h1>
-    
+      <div class="d-flex ">
+        <h1 class="my-4">Teman</h1>
+      </div>
+  
       <div class="container my-4 px-0">
-        <h6 class="text-body-secondary">Teman Favorit</h6>
+        <div class="d-flex justify-content-between align-items-center">
+          <h6 class="text-body-secondary">Teman Favorit</h6>
+          <input type="text" class="h-25 searchBar border-0 text-end" data-bs-target=".temanFavorit" placeholder="Cari">
+        </div>
         <hr>
-        <ul class="list-group">
+        <ul class="list-group temanFavorit">
           <li class="list-group-item d-flex justify-content-center align-items-center border-0">
             <a href=""><img class="img-fluid" src="images\avatars\fav1.svg" alt="Avatar"></a>
-            <span class="flex-grow-1 mx-3"><a class="text-dark fw-bold" href="">Indah Permata</a></span>
+            <span class="flex-grow-1 mx-3"><a class="text-dark fw-bold namaTeman" href="">Indah Permata</a></span>
             <span class="badge bg-success rounded-pill">Online</span>
           </li>
           <li class="list-group-item d-flex justify-content-center align-items-center border-0">
             <a href=""><img class="img-fluid" src="images\avatars\fav2.svg" alt="Avatar"></a>
-            <span class="flex-grow-1 mx-3"><a class="text-dark fw-bold" href="">Dito Kurniawan</a></span>
-            <span class="badge bg-success rounded-pill">Online</span>
+            <span class="flex-grow-1 mx-3"><a class="text-dark fw-bold namaTeman" href="">Dito Kurniawan</a></span>
+            <span class="badge bg-off rounded-pill">Offline</span>
           </li>
         </ul>
       </div>
       
       <div class="container my-4 px-0">
-        <h6 class="text-body-secondary">Semua</h6>
+        <div class="d-flex justify-content-between align-items-center">
+          <h6 class="text-body-secondary">Semua</h6>
+          <input type="text" class="h-25 searchBar border-0 text-end" data-bs-target=".seluruhTeman" placeholder="Cari">
+        </div>
         <hr>
-        <ul class="list-group">
+        <ul class="list-group seluruhTeman">
           <li class="list-group-item d-flex justify-content-center align-items-center border-0">
             <a href=""><img class="img-fluid" src="images\avatars\all1.svg" alt="Avatar"></a>
             <span class="flex-grow-1 mx-3"><a class="text-dark fw-bold" href="">Aditya Nugraha</a></span>
@@ -119,12 +128,12 @@
           <li class="list-group-item d-flex justify-content-center align-items-center border-0">
             <a href=""><img class="img-fluid" src="images\avatars\all3.svg" alt="Avatar"></a>
             <span class="flex-grow-1 mx-3"><a class="text-dark fw-bold" href="">Arya Wijaya</a></span>
-            <span class="badge bg-success rounded-pill">Online</span>
+            <span class="badge bg-off rounded-pill">Offline</span>
           </li>
           <li class="list-group-item d-flex justify-content-center align-items-center border-0">
             <a href=""><img class="img-fluid" src="images\avatars\all4.svg" alt="Avatar"></a>
             <span class="flex-grow-1 mx-3"><a class="text-dark fw-bold" href="">Sari Utami</a></span>
-            <span class="badge bg-success rounded-pill">Online</span>
+            <span class="badge bg-off rounded-pill">Offline</span>
           </li>
         </ul>
       </div>

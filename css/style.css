@@ -6973,6 +6973,12 @@ textarea.form-control-lg {
     color: #EA3468;
   }
 
+  .bg-off {
+    --bs-bg-opacity: 1;
+    background: var(--secondary-50, #AAAAAA);
+    color: #5A5A5A;
+  }
+
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important; }
