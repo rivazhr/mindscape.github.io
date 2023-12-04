@@ -59,7 +59,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function addDiscussionRoom(title, category, content, author, timePosted, commentCount) {
   var discussionContainer = document.createElement('div');
-  discussionContainer.className = 'row mt-5 justify-content-center ' + category + ' ruang-diskusi';
+  var categoryId;
+  if (category === 'Kesehatan Mental'){
+    categoryId = 'kesehatan-mental';
+  }
+  else if (category === 'Depresi'){
+    categoryId = 'depresi';
+  }
+  else if (category === 'Self-Care'){
+    categoryId = 'self-care';
+  }
+  else if (category === 'Hubungan'){
+    categoryId = 'hubungan';
+  }
+  discussionContainer.className = 'row mt-5 justify-content-center ' + categoryId + ' ruang-diskusi';
   discussionContainer.setAttribute('data-date-posted', timePosted);
   discussionContainer.setAttribute('data-commented', commentCount);
 
