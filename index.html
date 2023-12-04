@@ -10,7 +10,10 @@
   </head>
   <body>
     <script src="/js/bootstrap.bundle.min.js"></script>
-
+    
+    <script>
+      
+  </script>
     <nav class="navbar navbar-expand-lg py-3 justify-content-between w-100 navbar-light position-sticky z-3" style="top: 0px;">
       <div class="container">
         <a class="navbar-brand" href="#">
@@ -21,7 +24,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
   
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
               <a class="nav-link disabled" href="#">Ikuti Tes</a>
@@ -42,14 +45,14 @@
               <a class="nav-link disabled" href="#">Podcast</a>
             </li>
           </ul>
-          <ul class="navbar-nav d-flex align-items-end">
+          <ul class="navbar-nav nav-item d-flex align-items-end">
             <li class="nav-item"><a href="tentangkami.html" class="nav-link">Tentang Kami</a></li>
             <li class="nav-item"><a href="" class="nav-link">Bantuan</a></li>
             <li class="nav-item">
-              <a class="btn btn-outline-primary mb-2 mb-lg-0 mx-3" href="signup.html">Daftar</a>
+              <a class="btn btn-outline-primary mb-2 mb-lg-0" href="signup.html">Daftar</a>
             </li>
             <li class="nav-item">
-              <a class="btn btn-primary mb-2 mb-lg-0" href="signin.html">Masuk</a>
+              <a class="btn btn-primary mb-2 mb-lg-0 shadow-none" href="signin.html">Masuk</a>
             </li>
           </ul>
         </div>
@@ -78,17 +81,17 @@
       <div class="container">
         <h1 class="py-5 text-center">Apa yang ada di Mindscape?</h1>
         <div class="row justify-content-center">
-          <div class="col-lg-4 text-center">
+          <div class="col text-center">
             <img class="img-fluid py-2" src="images/elemen/assetTes.svg" alt="Tes Kesehatan Mental">
             <h2 class="py-2">Tes Kesehatan Mental</h2>
             <p>Tes ini tidak hanya mengukur tingkat stres, tetapi juga memberikan solusi yang relevan berdasarkan hasilnya.</p>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col text-center">
             <img class="img-fluid py-2" src="/images/elemen/assetMeditasi.svg" alt="Meditasi">
             <h2 class="py-2">Meditasi</h2>
             <p>Koleksi audio untuk meditasi dan panduan relaksasi yang mencakup white noise dan suara alam yang menenangkan.</p>
           </div>
-          <div class="col-lg-4 text-center">
+          <div class="col text-center">
             <img class="img-fluid py-2" src="/images/elemen/assetKomunitas.svg" alt="Komunitas">
             <h2 class="py-2">Komunitas</h2>
             <p>Komunitas sebagai wadah mempertemukan orang-orang dengan tujuan yang sama dan mengalami masalah yang sama.</p>
@@ -97,36 +100,104 @@
       </div>
       <div class="section py-5">
         <div class="row text-center py-5">
-          <h1 style="padding-top: 10px;">Audio Relaksasi</h1>
+          <h1>Audio Relaksasi</h1>
         </div>
         <div class="row align=align-items-center justify-content-center">
-          <div class="row col-lg-6 position-absolute d-flex justify-content-center">
+          <div class="row col-lg-7 position-absolute d-flex justify-content-center z-2">
             <div class="col">
-              <button class="btn btn-secondary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#alam" aria-expanded="false" aria-controls="collapseExample"">Alam</button>
+                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('alam')">Alam</button>
             </div>
             <div class="col">
-              <button class="btn btn-secondary w-100">Fokus</button>
+                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('fokus')">Fokus</button>
             </div>
             <div class="col">
-              <button class="btn btn-secondary w-100">Ketenangan</button>
+                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('ketenangan')">Ketenangan</button>
             </div>
             <div class="col">
-              <button class="btn btn-secondary w-100">Tidur</button>
+                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('tidur')">Tidur</button>
             </div>
-          </div>
-          <div class="row my-2 col-lg-8 w-50 justify-content-center ">
-            <div class="row container-audio align-items-center d-flex flex-row justify-content-center py-5">
-              <div class="col-lg-3 text-center">
+        </div>
+          <div class="row my-2 col-lg-8 collapse show px-5" id="alam">
+            <div class="container-audio align-items-center d-flex justify-content-center py-5 gx-2">
+              <span class="text-start me-2">
                 <button class="bg-transparent border-0 play-btn" data-audio-id="audio1">
                   <img src="images\icons\Play.svg" alt="">
                 </button>
-              </div>
-              <div class="col-lg-9 m-0">
-                <h4 class="py-2" style="color: white;">Snow On the Beach</h4>
-                <div class="progress w-100">
-                  <div class="progress-bar progress-bar-audio1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </span>
+              <span class="col-6">
+                <h4 class="text-white">Snow On the Beach</h4>
+                <div class="d-flex align-items-center text-white">
+                  <span class="current-time-audio1">00.00</span>
+                  <span class="progress w-100 mx-2" style="height: 2px;">
+                    <span class="progress-bar progress-bar-audio1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </span>
+                  </span>
+                  <span class="duration-audio1">00.00</span>
                 </div>
-              </div>
+              </span>
+            </div>
+          </div>
+          <!-- audio2 -->
+          <div class="row my-2 col-lg-8 collapse px-5" id="fokus">
+            <div class="container-audio align-items-center d-flex justify-content-center py-5 gx-2">
+              <span class="text-start me-2">
+                <button class="bg-transparent border-0 play-btn" data-audio-id="audio2">
+                  <img src="images\icons\Play.svg" alt="">
+                </button>
+              </span>
+              <span class="col-6">
+                <h4 class="text-white">Lo-Fi Times</h4>
+                <div class="d-flex align-items-center text-white">
+                  <span class="current-time-audio2">00.00</span>
+                  <span class="progress w-100 mx-2" style="height: 2px;">
+                    <span class="progress-bar progress-bar-audio2" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </span>
+                  </span>
+                  <span class="duration-audio2">00.00</span>
+                </div>
+              </span>
+            </div>
+          </div>
+          <!-- audio3 -->
+          <div class="row my-2 col-lg-8 collapse px-5" id="ketenangan">
+            <div class="container-audio align-items-center d-flex justify-content-center py-5 gx-2">
+              <span class="text-start me-2">
+                <button class="bg-transparent border-0 play-btn" data-audio-id="audio3">
+                  <img src="images\icons\Play.svg" alt="">
+                </button>
+              </span>
+              <span class="col-6">
+                <h4 class="text-white">Take a deep breath</h4>
+                <div class="d-flex align-items-center text-white">
+                  <span class="current-time-audio3">00.00</span>
+                  <span class="progress w-100 mx-2" style="height: 2px;">
+                    <span class="progress-bar progress-bar-audio3" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </span>
+                  </span>
+                  <span class="duration-audio3">00.00</span>
+                </div>
+              </span>
+            </div>
+          </div>
+          <!-- audio4 -->
+          <div class="row my-2 col-lg-8 collapse px-5" id="tidur">
+            <div class="container-audio align-items-center d-flex justify-content-center py-5 gx-2">
+              <span class="text-start me-2">
+                <button class="bg-transparent border-0 play-btn" data-audio-id="audio4">
+                  <img src="images\icons\Play.svg" alt="">
+                </button>
+              </span>
+              <span class="col-6">
+                <h4 class="text-white">Lavender's Blue Dilly Dilly</h4>
+                <div class="d-flex align-items-center text-white">
+                  <span class="current-time-audio4">00.00</span>
+                  <span class="progress w-100 mx-2" style="height: 2px;">
+                    <span class="progress-bar progress-bar-audio4" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    </span>
+                  </span>
+                  <span class="duration-audio4">00.00</span>
+                </div>
+              </span>
             </div>
           </div>
         </div>
@@ -134,6 +205,9 @@
     </div>
     
     <audio id="audio1" src="audio\Taylor Swift - Snow On The Beach (Feat. More Lana Del Rey)_2CnUYMmEHrs.mp3"></audio>
+    <audio id="audio2" src="audio\Lo-Fi Times.mp3"></audio>
+    <audio id="audio3" src="audio\LEE HI - '한숨 (BREATHE)' M_V_5iSlfF8TQ9k.mp3"></audio>
+    <audio id="audio4" src="audio\Lavenders Blue Dilly Dilly.mp3"></audio>
     
     <div class="section" style="background-color: #F3F3F3;">
       <img class="img-fluid w-100" src="/images/backgroundBiruw.svg" alt="">
