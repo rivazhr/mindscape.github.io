@@ -240,10 +240,6 @@ kbd {
 figure {
   margin: 0 0 1rem; }
 
-.dashboard:hover {
-  
-}
-
 .option-sort {
   background-color: transparent;
   border: 2px solid #F59AB4;
@@ -10295,7 +10291,9 @@ textarea {
 .site-footer {
   background: var(--bs-primary); 
   font-size: 14px;
-  padding: 48px 100px;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  padding-top: 1.5rem;
   color: white; }
   .site-footer a {
     color: rgba(255, 255, 255, 0.5);
