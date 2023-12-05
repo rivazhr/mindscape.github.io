@@ -623,6 +623,10 @@ progress {
   flex: 0 0 auto;
   width: 16.66667%; }
 
+  .chatList li{
+    cursor: pointer;
+  }
+
   #ruangObrolan {
     height: 400px;
     overflow-y:auto;
@@ -632,17 +636,19 @@ progress {
     word-wrap: break-word;
   }
   
-
+  
   .chatFriend {
     border-radius: 12px;
     background: #FFF;
     font-size: 12px;
     margin-bottom: 5px;
+    word-wrap: break-word;
     .timeSent {
-    color: #828689;
+      color: #828689;
     }
   }
   .chatSelf {
+    word-wrap: break-word;
     height: max-content;
     margin-bottom: 5px;
     border-radius: 12px;

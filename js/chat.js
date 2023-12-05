@@ -36,18 +36,6 @@ document.getElementById('fileInput').addEventListener('change', function (event)
   }
 });
 
-function clearFile() {
-  const selectedFileDetails = document.getElementById('selectedFileDetails');
-  selectedFileDetails.classList.add('visually-hidden');
-
-  const previewImage = document.getElementById('previewImage');
-  previewImage.src = '';
-
-  const clearButton = document.getElementById('clear');
-  clearButton.style.display = 'none';
-}
-
-
 function send(fileInputId, chatInputId) {
   const chatContainer = document.getElementById('ruangObrolan');
   const fileInput = document.getElementById(fileInputId);
@@ -78,7 +66,6 @@ function send(fileInputId, chatInputId) {
     selectedFileDetails.classList.add('visually-hidden');
   
     chatContainer.appendChild(chatMessage);
-    
   }
   chatContainer.scrollTop = chatContainer.scrollHeight;
 }
@@ -93,9 +80,16 @@ function getCurrentTime() {
 function clearFile() {
   const selectedFileDetails = document.getElementById('selectedFileDetails');
   const form = document.getElementById('sendChat');
-    form.reset();
+  form.reset();
+  const previewImage = document.getElementById('previewImage');
+  previewImage.src = '';
   selectedFileDetails.classList.add('visually-hidden');
-  
 }
-function resetFileInput() {
+
+function onChatListItemClick(collapseId) {
+  const chatRoom = document.getElementById(collapseId);
+  const bsCollapse = new bootstrap.Collapse(chatRoom, { toggle: false });
+  bsCollapse.show();
+
+  chatRoom.scrollIntoView({ behavior: "smooth" });
 }

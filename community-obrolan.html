@@ -85,7 +85,7 @@
 
     <div class="container my-5">
       <div class="row justify-content-center">
-        <div class="col-lg-4 mx-4">
+        <div class="col">
           <div>
             <h1>Obrolan</h1>
           </div>
@@ -96,6 +96,13 @@
             </svg>
           </div>
           <ul class="list-group chatList my-3 overflow-y-auto" style="height:400px;">
+            <li class="list-group-item w-100 border-0 d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#chatRoom1">
+              <div><img src="images/avatars/obrolan/avatar6.svg" alt=""></div>
+              <div class="ms-3">
+                <h6 class="mb-2">Dewi Kusuma</h6>
+                <p class="mb-0">Dewi Kusuma sedang mengetik...</p>
+              </div>
+            </li>
             <li class="list-group-item w-100 border-0 d-flex align-items-center">
               <div><img src="images/avatars/obrolan/avatar1.svg" alt=""></div>
               <div class="ms-3">
@@ -131,14 +138,7 @@
                 <p class="mb-0">Tak seperti pertama kali....</p>
               </div>
             </li>
-            <li class="list-group-item w-100 border-0 d-flex align-items-center">
-              <div><img src="images/avatars/obrolan/avatar6.svg" alt=""></div>
-              <div class="ms-3">
-                <h6 class="mb-2">Dewi Kusuma</h6>
-                <p class="mb-0">Dewi Kusuma sedang mengetik...</p>
-              </div>
-            </li>
-            <li class="list-group-item w-100 border-0 d-flex align-items-center">
+            <li class="list-group-item w-100 border-0 d-flex align-items-center" data-bs-toggle="collapse" data-bs-target="#chatRoom2">
               <div><img src="images/avatars/obrolan/avatar7.svg" alt=""></div>
               <div class="ms-3">
                 <h6 class="mb-2">Fauzi Rahman</h6>
@@ -148,7 +148,7 @@
           </ul>
         </div>
       
-        <div class="col-lg-6">
+        <div class="col collapse" id="chatRoom1">
           <div class="row py-2 align-items-center" style="background-color: #AAC3E4;">
             <div class="d-flex align-items-center">
               <img class="img-fluid" style="width: fit-content;" src="images/avatars/obrolan/avatar6.svg" alt="">
