@@ -27,22 +27,23 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Ikuti Tes</a>
+              <a class="nav-link" href="signin.html">Ikuti Tes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Meditasi</a>
+              <a class="nav-link" href="signin.html">Meditasi</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link disabled dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Komunitas
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Teman</a></li>
-                <li><a class="dropdown-item" href="#">Ruang Obrolan</a></li>
+                <li><a class="dropdown-item" href="signin.html">Komunitas</a></li>
+                <li><a class="dropdown-item" href="signin.html">Teman</a></li>
+                <li><a class="dropdown-item" href="signin.html">Ruang Obrolan</a></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Podcast</a>
+              <a class="nav-link" href="signin.html">Podcast</a>
             </li>
           </ul>
           <ul class="navbar-nav nav-item d-flex align-items-end">
@@ -102,21 +103,23 @@
         <div class="row text-center py-5">
           <h1>Audio Relaksasi</h1>
         </div>
-        <div class="row align=align-items-center justify-content-center">
+        <div class="row justify-content-center">
           <div class="row col-lg-7 position-absolute d-flex justify-content-center z-2">
-            <div class="col">
-                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('alam')">Alam</button>
+            <div class="col-lg-7 d-flex justify-content-between">
+              <span>
+                <button class="btn btn-secondary" type="button" onclick="toggleAudio('alam')">Alam</button>
+              </span>
+              <span>
+                <button class="btn btn-secondary" type="button" onclick="toggleAudio('fokus')">Fokus</button>
+              </span>
+              <span>
+                <button class="btn btn-secondary" type="button" onclick="toggleAudio('ketenangan')">Ketenangan</button>
+              </span>
+              <span>
+                <button class="btn btn-secondary" type="button" onclick="toggleAudio('tidur')">Tidur</button>
+              </span>
             </div>
-            <div class="col">
-                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('fokus')">Fokus</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('ketenangan')">Ketenangan</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('tidur')">Tidur</button>
-            </div>
-        </div>
+          </div>
           <div class="row my-2 col-lg-8 collapse show px-5" id="alam">
             <div class="container-audio align-items-center d-flex justify-content-center py-5 gx-2">
               <span class="text-start me-2">
@@ -245,7 +248,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="widget">
-            <h3><a href="homepage.html"><img src="images\Logo-putih.svg" alt="Mindscape logo" width="197.612px"></a></h3>
+            <h3><a href="index.html"><img src="images\Logo-putih.svg" alt="Mindscape logo" width="197.612px"></a></h3>
             <p>Mindscape, platform inovatif untuk mahasiswa, menyokong kesejahteraan mental melalui fitur tes, meditasi, komunitas, dan podcast.</p>
           </div> <!-- /.widget -->
         </div> <!-- /.col-lg-3 -->
@@ -253,10 +256,10 @@
           <div class="widget">
             <h3>Layanan</h3>
             <ul class="list-unstyled float-start links">
-              <li><a href="tes.html">Tes</a></li>
-              <li><a href="meditasi.html">Meditasi</a></li>
-              <li><a href="podcast.html">Podcast</a></li>
-              <li><a href="community.html">Komunitas</a></li>
+              <li><a href="signin.html">Tes</a></li>
+              <li><a href="signin.html">Meditasi</a></li>
+              <li><a href="signin.html">Podcast</a></li>
+              <li><a href="signin.html">Komunitas</a></li>
             </ul>
           </div> <!-- /.widget -->
         </div> <!-- /.col -->
@@ -290,7 +293,7 @@
 
       <div class="row">
         <div class="col-12 text-center">
-          <p>Copyright ©2023 <a href="homepage.html">Mindscape</a>. All rights reserved.</p>
+          <p>Copyright ©2023 <a href="index.html">Mindscape</a>. All rights reserved.</p>
         </div>
       </div> <!-- /.row -->
     </div> <!-- /.container -->

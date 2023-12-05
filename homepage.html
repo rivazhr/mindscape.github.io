@@ -139,21 +139,23 @@
         <div class="row text-center py-5">
           <h1>Audio Relaksasi</h1>
         </div>
-        <div class="row align=align-items-center justify-content-center">
+        <div class="row justify-content-center">
           <div class="row col-lg-7 position-absolute d-flex justify-content-center z-2">
-            <div class="col">
-                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('alam')">Alam</button>
+            <div class="col-lg-7 d-flex justify-content-between">
+              <span>
+                <button class="btn btn-secondary" type="button" onclick="toggleAudio('alam')">Alam</button>
+              </span>
+              <span>
+                <button class="btn btn-secondary" type="button" onclick="toggleAudio('fokus')">Fokus</button>
+              </span>
+              <span>
+                <button class="btn btn-secondary" type="button" onclick="toggleAudio('ketenangan')">Ketenangan</button>
+              </span>
+              <span>
+                <button class="btn btn-secondary" type="button" onclick="toggleAudio('tidur')">Tidur</button>
+              </span>
             </div>
-            <div class="col">
-                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('fokus')">Fokus</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('ketenangan')">Ketenangan</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-secondary w-100" type="button" onclick="toggleAudio('tidur')">Tidur</button>
-            </div>
-        </div>
+          </div>
           <div class="row my-2 col-lg-8 collapse show px-5" id="alam">
             <div class="container-audio align-items-center d-flex justify-content-center py-5 gx-2">
               <span class="text-start me-2">
