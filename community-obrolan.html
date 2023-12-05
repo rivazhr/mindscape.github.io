@@ -10,6 +10,7 @@
   </head>
   <body>
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="js\search-bar.js"></script>
     
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
@@ -82,6 +83,149 @@
       </div>
     </div>
 
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-4">
+          <div>
+            <h1>Obrolan</h1>
+          </div>
+          <div class="w-100 d-flex align-items-center">
+            <input type="text" class="searchBar border-0 w-75 p-2 px-3 rounded-5 mb-2 me-3" style="background-color: #CCDBEF; width: calc(100%-15px);" data-bs-target=".chatList" placeholder="Cari">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="15" viewBox="0 0 20 15" fill="none">
+              <path d="M19 2.97059H1C0.734784 2.97059 0.48043 2.84044 0.292893 2.60878C0.105357 2.37712 0 2.06291 0 1.73529C0 1.40767 0.105357 1.09347 0.292893 0.861809C0.48043 0.630147 0.734784 0.5 1 0.5H19C19.2652 0.5 19.5196 0.630147 19.7071 0.861809C19.8946 1.09347 20 1.40767 20 1.73529C20 2.06291 19.8946 2.37712 19.7071 2.60878C19.5196 2.84044 19.2652 2.97059 19 2.97059ZM15.6667 8.73529H4.33333C4.06812 8.73529 3.81376 8.60515 3.62623 8.37348C3.43869 8.14182 3.33333 7.82762 3.33333 7.5C3.33333 7.17238 3.43869 6.85818 3.62623 6.62651C3.81376 6.39485 4.06812 6.26471 4.33333 6.26471H15.6667C15.9319 6.26471 16.1862 6.39485 16.3738 6.62651C16.5613 6.85818 16.6667 7.17238 16.6667 7.5C16.6667 7.82762 16.5613 8.14182 16.3738 8.37348C16.1862 8.60515 15.9319 8.73529 15.6667 8.73529ZM11.6667 14.5H8.33333C8.06812 14.5 7.81376 14.3699 7.62623 14.1382C7.43869 13.9065 7.33333 13.5923 7.33333 13.2647C7.33333 12.9371 7.43869 12.6229 7.62623 12.3912C7.81376 12.1596 8.06812 12.0294 8.33333 12.0294H11.6667C11.9319 12.0294 12.1862 12.1596 12.3738 12.3912C12.5613 12.6229 12.6667 12.9371 12.6667 13.2647C12.6667 13.5923 12.5613 13.9065 12.3738 14.1382C12.1862 14.3699 11.9319 14.5 11.6667 14.5Z" fill="#004AAD"/>
+            </svg>
+          </div>
+          <ul class="list-group chatList my-3">
+            <li class="list-group-item w-100 border-0 d-flex align-items-center">
+              <div><img src="images/avatars/obrolan/avatar1.svg" alt=""></div>
+              <div class="ms-3">
+                <h6 class="mb-2">Anisa Putri</h6>
+                <p class="mb-0">Kamu bilang aku tak sama....</p>
+              </div>
+            </li>
+            <li class="list-group-item w-100 border-0 d-flex align-items-center">
+              <div><img src="images/avatars/obrolan/avatar2.svg" alt=""></div>
+              <div class="ms-3">
+                <h6 class="mb-2">I Made Wirawan</h6>
+                <p class="mb-0">Tak seperti saat pertama....</p>
+              </div>
+            </li>
+            <li class="list-group-item w-100 border-0 d-flex align-items-center">
+              <div><img src="images/avatars/obrolan/avatar3.svg" alt=""></div>
+              <div class="ms-3">
+                <h6 class="mb-2">Nia Fitriani</h6>
+                <p class="mb-0">Aku bilang mungkin pikiranmu saja....</p>
+              </div>
+            </li>
+            <li class="list-group-item w-100 border-0 d-flex align-items-center">
+              <div><img src="images/avatars/obrolan/avatar4.svg" alt=""></div>
+              <div class="ms-3">
+                <h6 class="mb-2">Rizky Pratama</h6>
+                <p class="mb-0">Kamu bilang ku tak peduli....</p>
+              </div>
+            </li>
+            <li class="list-group-item w-100 border-0 d-flex align-items-center">
+              <div><img src="images/avatars/obrolan/avatar5.svg" alt=""></div>
+              <div class="ms-3">
+                <h6 class="mb-2">Putri Indah</h6>
+                <p class="mb-0">Tak seperti pertama kali....</p>
+              </div>
+            </li>
+            <li class="list-group-item w-100 border-0 d-flex align-items-center">
+              <div><img src="images/avatars/obrolan/avatar6.svg" alt=""></div>
+              <div class="ms-3">
+                <h6 class="mb-2">Dewi Kusuma</h6>
+                <p class="mb-0">Dewi Kusuma sedang mengetik...</p>
+              </div>
+            </li>
+            <li class="list-group-item w-100 border-0 d-flex align-items-center">
+              <div><img src="images/avatars/obrolan/avatar7.svg" alt=""></div>
+              <div class="ms-3">
+                <h6 class="mb-2">Fauzi Rahman</h6>
+                <p class="mb-0">Aku bilang janganlah ragu sendiri....</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="col-lg-6">
+          <div class="row py-2 align-items-center" style="background-color: #AAC3E4;">
+            <div class="d-flex align-items-center">
+              <img class="img-fluid" style="width: fit-content;" src="images/avatars/obrolan/avatar6.svg" alt="">
+              <div class="ms-3">
+                <h6 class="mb-1" style="font-size: 16px;">Dewi Kusuma</h6>
+                <p class="mb-0" style="font-size: 14px;">Dewi Kusuma sedang mengetik...</p>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3" id="ruangObrolan" style="background-color: #CCDBEF;">
+            <div class="row">
+              <div class="col-6">
+                <div class="chatFriend p-2 px-3">
+                  <p>
+                    Halo Noory! Bagaimana kabarmu akhir-akhir ini?
+                  </p>
+                  <div class="text-end timeSent" style="font-size: 10px;">12:17 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-6 d-flex justify-content-end">
+                <div class="chatSelf p-2 px-3">
+                  <p>
+                    Hai Dewi! Sejujurnya, ya, aku agak stres belakangan ini. Tugas kuliah bertumpuk, dan ujian-ujian yang semakin dekat membuatku merasa tertekan. Rasanya seperti sulit untuk menemukan keseimbangan.
+                  </p>
+                  <div class="text-end timeSent" style="font-size: 10px;">12:17 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <div class="chatFriend p-2 px-3">
+                  <p>
+                    Aku bisa merasakannya, Noory. Memang tidak mudah menghadapi semua itu, terutama di masa-masa penuh tekanan seperti ini. Mungkin kita bisa mencari cara untuk mengatasi stres ini bersama. Apakah kamu sudah mencoba berbicara dengan dosen atau teman-teman?
+                  </p>
+                  <div class="text-end timeSent" style="font-size: 10px;">12:17 PM</div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-end">
+              <div class="col-6 justify-content-end">
+                <div class="chatSelf p-2 px-3">
+                  <div>
+                    <p>Aku belum, Dewi. Terkadang rasanya sulit untuk mengungkapkan perasaan ini. Aku khawatir orang-orang akan menganggapku lemah atau tidak mampu mengatasi tantangan kuliah.</p>
+                  </div>
+                  <div class="text-end timeSent" style="font-size: 10px;">12:17 PM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="visually-hidden bg-transparent" id="selectedFileDetails">
+            <img id="previewImage" src="tes" alt="">
+          </div>
+          <div class="row chat-input-container p-2 justify-content-between" style="background-color: #AAC3E4;">
+            <form class="d-flex align-content-center" id="sendChat">
+              <span>
+                <input type="file" class="form-control bg-transparent d-none" id="fileInput">
+                <label for="fileInput" class="input-group-text bg-transparent border-0">
+                  <img class="img-fluid" src="images\icons\add.svg" alt="">
+                </label>
+              </span>
+              <div class="d-flex align-items-center flex-grow-1 mx-2" >
+                <input type="text" id="chatInput" class="bg-transparent border-0 w-100" placeholder="Ketikkan pesan...">
+              </div>
+              <span class="">
+                <a class="btn" onclick="send('fileInput', 'chatInput')">
+                  <img class="img-fluid" src="images\icons\send.svg" alt="">
+                </a>
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="site-footer pb-0">
       <div class="container">
         <div class="row">
@@ -137,5 +281,6 @@
           </div> <!-- /.row -->
         </div> <!-- /.container -->
       </div>
+    <script src="js\chat.js"></script>
   </body>
 </html>

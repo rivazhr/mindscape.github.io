@@ -623,6 +623,52 @@ progress {
   flex: 0 0 auto;
   width: 16.66667%; }
 
+  #ruangObrolan {
+    height: 600px;
+    overflow-y:auto;
+  }
+
+  .chatFriend {
+    border-radius: 12px;
+    background: #FFF;
+    font-size: 12px;
+    margin-bottom: 5px;
+    .timeSent {
+    color: #828689;
+    }
+  }
+  .chatSelf {
+    height: max-content;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    background: #5586C8;
+    color: #FFFFFF;
+    font-size: 12px;
+  }
+
+  .chat-input-container {
+      background-color: #AAC3E4;
+    }
+
+    .chat-input-container img {
+      cursor: pointer !important;
+    }
+
+    .chat-input-container input {
+      outline: none;
+      border: none;
+      background-color: transparent;
+    }
+
+    .chat-input-container input::placeholder {
+      color: #004AAD;
+      opacity: 0.7;
+    }
+
+    .send-icon {
+      cursor: pointer;
+    }
+
 .col-auto {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -2088,10 +2134,10 @@ textarea.form-control-lg {
         background-color: #FFF1A7;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
-
+    
     .custom-textarea {
       width: 100%;
-      max-width: 1140px; /* Set the maximum width */
+      max-width: 1140px; 
       flex-shrink: 0;
       padding: 30px;
       border-radius: 30px;
@@ -5484,14 +5530,6 @@ textarea.form-control-lg {
   background-position: 50%;
   background-size: 100% 100%; }
 
-/* rtl:options: {
-  "autoRename": true,
-  "stringMap":[ {
-    "name"    : "prev-next",
-    "search"  : "prev",
-    "replace" : "next"
-  } ]
-} */
 .carousel-control-prev-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e"); }
 
