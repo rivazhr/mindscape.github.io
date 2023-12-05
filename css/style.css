@@ -624,9 +624,14 @@ progress {
   width: 16.66667%; }
 
   #ruangObrolan {
-    height: 600px;
+    height: 400px;
     overflow-y:auto;
   }
+
+  .message-content {
+    word-wrap: break-word;
+  }
+  
 
   .chatFriend {
     border-radius: 12px;
